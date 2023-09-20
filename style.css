@@ -1,5 +1,7 @@
 body{
     margin:0px;
+    font-family: sans-serif;
+    font-size: 24px;
 }
 
 /*Body Header */
@@ -11,6 +13,7 @@ body{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    padding-top: 1.2rem;
 }
 
 
@@ -29,6 +32,8 @@ body{
 .horizontal-list li{
     display: inline-block;
     margin: 0px 8px 8px 0px;
+    font-weight: 100;
+    font-size: 0.9 rem;
 }
 
 .horizontal-list li a{
@@ -43,7 +48,7 @@ body{
 
 .nav-menu li a:hover{
     color: lightgrey;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid lightgray;
 }
 
 
@@ -70,4 +75,52 @@ body{
 
 .social-icons li a i:hover{
     box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.24);
+}
+
+
+/* About Section */
+#about{
+    height: auto;
+    width: 100%;
+    position: relative; /* relative to it's original position, will appear above over other components */
+    /* top: 0px; */
+}
+
+#my-image{
+    height:12rem;
+    width: 12rem;   
+    /* 1-"rem units" are relative to the root element's (mainly <html>) font-size.
+    Default font size of <html> element in most browser is typically (16px). However, this can 
+    vary depending on the browser's default settings and custom styles that may be applied to the page.
+    2- If font size of root element is 16px then 12rem = 12*16 px = 192 px.
+    3- Common screen resolution 72 pixel per inch(PPI) and 96 PPI, but screen with higher PPI are becoming more common.
+    then, 192px is approx 2 inches if PPI is 96. Inches = 192 px / 96 PPI = 2 inches
+    4-1 inch = 2.54cm so, 2 inch = 5.08cm. 
+    12 rem = 5.08cm (approx) */
+
+    margin:auto;
+    margin-top: -17vh;  
+    /* vh is relative to viewport i.e visible area of browser. For complete viewport: 100vh & 100vw */
+}
+
+#my-image img{
+    height: 100%;  /* % is relative to parent element i.e <div> with id= my-image */
+    width: 100%;
+    border-radius: 50%; 
+    box-shadow: 0px 0px 6px 4px lightgrey;
+}  
+
+.para{
+    padding: 10px;
+    width: 70%;
+    margin: auto;
+    text-align: justify;
+    line-height: 28px;
+    font-size: 1.1rem;
+    color: grey;
+    margin-bottom: 2rem;
+}
+
+.text-highlight{
+    color : #2857a4;
 }
