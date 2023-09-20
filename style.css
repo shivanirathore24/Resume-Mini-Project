@@ -1,8 +1,10 @@
+
 body{
     margin:0px;
     font-family: sans-serif;
     font-size: 24px;
 }
+
 
 /*Body Header */
 
@@ -22,11 +24,7 @@ body{
 .horizontal-list{
     list-style: none;
     padding-left:0px;
-    margin: 0px;
-}
-
-.text-center{
-    text-align: center;
+    margin:0px;
 }
 
 .horizontal-list li{
@@ -39,7 +37,6 @@ body{
 .horizontal-list li a{
     color: white;
     text-decoration: none;
-    transition: color 0.5s, border-bottom 4s;
 }
 
 .nav-menu li a{
@@ -48,7 +45,11 @@ body{
 
 .nav-menu li a:hover{
     color: lightgrey;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid black;
+}
+
+.text-center{
+    text-align: center;
 }
 
 
@@ -78,7 +79,26 @@ body{
 }
 
 
+/* Section Classes */
+
+section{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:nth-child(2n){
+    background-color: lightgrey;
+}
+
+section:nth-child(2n+1){
+    background-color:white;
+}
+
+
 /* About Section */
+
 #about{
     height: auto;
     width: 100%;
@@ -107,20 +127,24 @@ body{
     height: 100%;  /* % is relative to parent element i.e <div> with id= my-image */
     width: 100%;
     border-radius: 50%; 
-    box-shadow: 0px 0px 6px 4px lightgrey;
+    border: 3px solid white;
+    box-shadow: 1px 1px 10px 2px lightgrey;
 }  
 
-.para{
+#about-para{
     padding: 10px;
     width: 70%;
     margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
-    line-height: 28px;
-    font-size: 1.1rem;
     color: grey;
-    margin-bottom: 2rem;
+    line-height: 28px;
+    font-weight: 100;
+    font-size: 1.1rem;
 }
 
 .text-highlight{
     color : #2857a4;
+    font-weight: 600;
 }
+
