@@ -1,4 +1,3 @@
-
 body{
     margin:0px;
     font-family: sans-serif;
@@ -7,7 +6,6 @@ body{
 
 
 /*Body Header */
-
 #body-header{
     height: 65vh;
     opacity: 0.8;
@@ -20,7 +18,6 @@ body{
 
 
 /* Horizontal-list */
-
 .horizontal-list{
     list-style: none;
     padding-left:0px;
@@ -54,7 +51,6 @@ body{
 
 
 /* Name and Social Icons */
-
 #name-social-container{
     margin-top: 20vh;
 }
@@ -80,25 +76,38 @@ body{
 
 
 /* Section Classes */
-
 section{
     width:100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;  
 }
 
 section:nth-child(2n){
-    background-color: lightgrey;
+    background-color: #f0ecec;
 }
 
 section:nth-child(2n+1){
     background-color:white;
 }
 
+.section-heading{
+    width: auto;
+    padding: 20px 10px 10px;
+    margin: 10px auto;
+    font-family: 400;
+}
+
+.section-heading span{
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+
 
 /* About Section */
-
 #about{
     height: auto;
     width: 100%;
@@ -143,8 +152,90 @@ section:nth-child(2n+1){
     font-size: 1.1rem;
 }
 
+
+/* SKills Sections */
+.skills-display{
+    width: 75%;
+    padding: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;   
+}
+
+.skill-progress{
+    width: 11rem;
+    height: 2.2rem;
+    background-color: lightgrey;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+    margin: 25px;
+    overflow: hidden;    /*check why to use */
+    /* border: 2px solid black; */
+}
+
+.skill-progress>div{
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 1px 1px 5px 2px #989882;
+}
+
+.skill-name span{
+    color: white;
+    font-size: 1rem;
+    margin-left: 10px;
+    vertical-align: middle;   /*check why to use */
+}
+
+
+/* Common Margin Classes */
+.mb75px{
+    margin-bottom: 75px;
+}
+
+
+/* Common color classes */
 .text-highlight{
     color : #2857a4;
     font-weight: 600;
+}
+
+
+/* setting background-color */
+.mb-blue {
+    background-color: #2857a4;
+}
+
+.mb-orange {
+    background-color: #ec4d1c;
+}
+
+.mb-teal {
+    background-color: #0b8176;
+}
+
+.mb-light-purple {
+    background-color: #93738c;
+}
+
+
+/*Percentage Classes */
+.sixety-percent{
+    height: inherit;
+    width: 60%;
+}
+
+.eighty-percent {
+    height: inherit;
+    width: 80%;
+}
+
+.eighty-five-percent {
+    height: inherit;
+    width: 85%;
+}
+
+.ninety-percent {
+    height: inherit;
+    width: 90%;
 }
 
