@@ -170,7 +170,7 @@ section:nth-child(2n+1){
     border-radius: 1rem;
     box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
     margin: 25px;
-    overflow: hidden;    /*check why to use */
+    overflow: hidden;  
     /* border: 2px solid black; */
 }
 
@@ -184,6 +184,52 @@ section:nth-child(2n+1){
     font-size: 1rem;
     margin-left: 10px;
     vertical-align: middle;   /*check why to use */
+}
+
+
+/* Portfolio Section */
+#portfolio-container{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    margin-bottom: 20px;
+    justify-content: space-around;
+}
+
+.portfolio-image-container{
+    max-width: 300px;
+    margin: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.portfolio-image-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio-details{
+    transition: all 0.5s ease-in-out ;
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    color: transparent;
+    text-align: center;
+    padding: 10px;  
+}
+
+.portfolio-image-container:hover{
+    box-shadow: 0 0 20px #74adc8;
+}
+
+.portfolio-image-container:hover .portfolio-details{
+    background-color: #80808078;
+    color: white;
 }
 
 
