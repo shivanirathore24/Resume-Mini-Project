@@ -448,23 +448,31 @@ button:focus{
 
 
 /* Common Margin Classes */
-.mb75px{
+.m0 {
+    margin: 0;
+}
+
+.mb75px {
     margin-bottom: 75px;
 }
 
-.mb50px{
+.mb50px {
     margin-bottom: 50px;
 }
 
 
-/* Common color classes */
-.text-highlight{
-    color : #2857a4;
+/*common color classes */
+.text-highlight {
+    color: #2857a4;
     font-weight: 600;
 }
 
 
 /* setting background-color */
+.m-blue {
+    color: #2857a4;
+}
+
 .mb-blue {
     background-color: #2857a4;
 }
