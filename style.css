@@ -5,7 +5,9 @@ body{
 }
 
 
+
 /*Body Header */
+
 #body-header{
     height: 65vh;
     opacity: 0.8;
@@ -17,7 +19,9 @@ body{
 }
 
 
+
 /* Horizontal-list */
+
 .horizontal-list{
     list-style: none;
     padding-left:0px;
@@ -28,7 +32,7 @@ body{
     display: inline-block;
     margin: 0px 8px 8px 0px;
     font-weight: 100;
-    font-size: 0.9 rem;
+    font-size: 0.9rem;
 }
 
 .horizontal-list li a{
@@ -50,7 +54,9 @@ body{
 }
 
 
+
 /* Name and Social Icons */
+
 #name-social-container{
     margin-top: 20vh;
 }
@@ -67,38 +73,38 @@ body{
     padding: 10px;
     font-size: 1rem;
     border-radius: 50%;
-    /* border: 1px solid white; */
 }
 
 .social-icons li a i:hover{
-    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.24);
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
 }
+
 
 
 /* Section Classes */
-section{
-    width:100%;
+
+section {
     display: flex;
     flex-direction: column;
-    align-items: center;  
+    align-items: center;
+    padding-bottom: 20px;
 }
 
-section:nth-child(2n){
-    background-color: #f0ecec;
+section:nth-child(2n) {
+    background-color: #9e9b9b29;
 }
 
-section:nth-child(2n+1){
-    background-color:white;
+section:nth-child(2n + 1) {
+    background-color: white;
 }
 
-.section-heading{
+.section-heading {
     width: auto;
     padding: 20px 10px 10px;
-    margin: 10px auto;
-    font-family: 400;
+    font-weight: 400;
 }
 
-.section-heading span{
+.section-heading span {
     font-size: 40px;
     color: #2857a4;
     display: inline-block;
@@ -106,23 +112,18 @@ section:nth-child(2n+1){
     margin-right: 0.5rem;
 }
 
-/* section:target{
-    background-color: rgb(198, 232, 243);
-} */
 
 
 /* About Section */
+
 #about{
     height: auto;
     width: 100%;
-    position: relative; /* relative to it's original position, will appear above over other components */
-    /* top: 0px; */
+    position: relative;  /* relative to it's original position, will appear above over other components */
+    margin-bottom: 30px;
 }
 
-#my-image{
-    height:12rem;
-    width: 12rem;   
-    /* 1-"rem units" are relative to the root element's (mainly <html>) font-size.
+/* 1-"rem units" are relative to the root element's (mainly <html>) font-size.
     Default font size of <html> element in most browser is typically (16px). However, this can 
     vary depending on the browser's default settings and custom styles that may be applied to the page.
     2- If font size of root element is 16px then 12rem = 12*16 px = 192 px.
@@ -130,10 +131,11 @@ section:nth-child(2n+1){
     then, 192px is approx 2 inches if PPI is 96. Inches = 192 px / 96 PPI = 2 inches
     4-1 inch = 2.54cm so, 2 inch = 5.08cm. 
     12 rem = 5.08cm (approx) */
-
+#my-image{
+    height:12rem;
+    width: 12rem;   
     margin:auto;
     margin-top: -17vh;  
-    /* vh is relative to viewport i.e visible area of browser. For complete viewport: 100vh & 100vw */
 }
 
 #my-image img{
@@ -147,17 +149,17 @@ section:nth-child(2n+1){
 #about-para{
     padding: 10px;
     width: 70%;
-    margin: auto;
-    font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
     color: grey;
     line-height: 28px;
-    font-weight: 100;
     font-size: 1.1rem;
+    margin: auto;
 }
 
 
+
 /* SKills Sections */
+
 .skills-display{
     width: 75%;
     padding: 10px;
@@ -175,10 +177,9 @@ section:nth-child(2n+1){
     box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
     margin: 25px;
     overflow: hidden;  
-    /* border: 2px solid black; */
 }
 
-.skill-progress>div{
+.skill-progress > div{
     border-radius: 20px 0px 0px 20px;
     box-shadow: 1px 1px 5px 2px #989882;
 }
@@ -187,11 +188,13 @@ section:nth-child(2n+1){
     color: white;
     font-size: 1rem;
     margin-left: 10px;
-    vertical-align: middle;   /*check why to use */
+    vertical-align: middle; 
 }
 
 
+
 /* Work Experience */
+
 .timeline {
     position: relative;
     width: 75%;
@@ -296,7 +299,9 @@ section:nth-child(2n+1){
 }
 
 
+
 /* Portfolio Section */
+
 #portfolio-container{
     box-sizing: border-box;
     display: flex;
@@ -306,14 +311,13 @@ section:nth-child(2n+1){
     justify-content: space-around;
 }
 
-.portfolio-image-container{
+.portfolio-image-container {
     max-width: 300px;
-    margin: 10px;
+    overflow: hidden;
+    margin: 30px;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    overflow: hidden;
-    
 }
 
 .portfolio-image-container img{
@@ -333,7 +337,7 @@ section:nth-child(2n+1){
 }
 
 .portfolio-image-container:hover{
-    box-shadow: 0 0 20px #74adc8;
+    box-shadow: 0 0 20px #74ADC8;
 }
 
 .portfolio-image-container:hover .portfolio-details{
@@ -342,13 +346,14 @@ section:nth-child(2n+1){
 }
 
 
+
 /* Contact Form */
+
 #contact{
     background-color:#0abcf9;
     background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
     color: white;
-    padding-bottom: 40px;
-    
+    padding-bottom: 40px;   
 }
 
 #contact h1,
@@ -447,7 +452,9 @@ button:focus{
 }
 
 
+
 /* Common Margin Classes */
+
 .m0 {
     margin: 0;
 }
@@ -462,6 +469,7 @@ button:focus{
 
 
 /*common color classes */
+
 .text-highlight {
     color: #2857a4;
     font-weight: 600;
@@ -469,6 +477,7 @@ button:focus{
 
 
 /* setting background-color */
+
 .m-blue {
     color: #2857a4;
 }
@@ -491,6 +500,7 @@ button:focus{
 
 
 /*Percentage Classes */
+
 .sixety-percent{
     height: inherit;
     width: 60%;
